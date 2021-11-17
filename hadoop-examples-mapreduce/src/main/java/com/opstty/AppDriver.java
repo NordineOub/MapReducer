@@ -26,28 +26,28 @@ public class AppDriver {
 					"Un programme map/reduce qui return le nombre d'arbres par quartier.");
 
 			programDriver.addClass("treeSpecies", ExistingSpecies.class,
-					"A map/reduce program that returns the distinct tree species in the Remarkable Trees of Paris dataset.");
+					"Un programme de map/reduce qui renvoie les espèces d’arbres distinctes dans l’ensemble de données Arbres remarquables de Paris.");
 
 			programDriver.addClass("treeSpeciesCount", CountBYSpecies.class,
-					"A map/reduce program that returns the distinct tree species (and the number of trees for each one) in the Remarkable Trees of Paris dataset.");
+					"Un programme map/reduce qui renvoie les espèces d’arbres distinctes (et le nombre d’arbres pour chacune) dans l’ensemble de données Arbres remarquables de Paris.");
 
 			programDriver.addClass("maxHeightSpecies", MaxHeightByKind.class,
-					"A map/reduce program that returns the highest height of trees per species in the Remarkable Trees of Paris dataset.");
+					"Un programme map/reduce qui renvoie la plus grande hauteur d’arbres par espèce dans l’ensemble de données Arbres remarquables de Paris.");
 
 			programDriver.addClass("treesSortedByHeight", SortedByHeight.class,
-					"A map/reduce program that returns all the trees in the Remarkable Trees of Paris dataset, sorted by height.");
+					"Un programme map/reduce qui renvoie tous les arbres du jeu de données Remarkable Trees of Paris, triés par hauteur.");
 
 			programDriver.addClass("oldestTreeDistrictSort", OldestTreeDistrictSort.class,
-					"A map/reduce program that returns the district(s) with the oldest tree(s) in the Remarkable Trees of Paris dataset, using a sort.");
+					"Un programme map/reduce qui renvoie le(s) quartier(s) avec le(s) arbre(s) le(s) le(s) le(s) plus ancien(s) dans le jeu de données Arbres remarquables de Paris, à l’aide d’un tri.");
 
 			programDriver.addClass("oldestTreeDistrictReduce", OldestTreeDistrictReduce.class,
-					"A map/reduce program that returns the district(s) with the oldest tree(s) in the Remarkable Trees of Paris dataset, checking through all the data.");
+					"Un programme map/reduce qui renvoie le(s) quartier(s) avec le(s) arbre(s) le(s) le(s) plus ancien(s) dans le jeu de données Arbres remarquables de Paris, en vérifiant toutes les données.");
 
 			programDriver.addClass("maxTreesDistrict", DistrictMostTrees.class,
-					"A map/reduce program that returns the district(s) with the most trees in the Remarkable Trees of Paris dataset, checking through all the data, using the Reducer's cleanup.");			
+					"Un programme map/reduce qui renvoie le(s) quartier(s) avec le plus d’arbres dans le jeu de données Arbres remarquables de Paris, en vérifiant toutes les données, en utilisant le nettoyage du réducteur.");			
 			
 			programDriver.addClass("maxTreesDistrict2", MaxTreesDistrict2.class,
-					"A map/reduce program that returns the district(s) with the most trees in the Remarkable Trees of Paris dataset, checking through all the data, using two Reduce jobs.");			
+					"Un programme map/reduce qui renvoie le(s) quartier(s) avec le plus d’arbres dans le jeu de données Remarkable Trees of Paris, en vérifiant toutes les données, en utilisant deux tâches Reduce.");			
 			
 			exitCode = programDriver.run(argv);
 		} catch (Throwable throwable) {
