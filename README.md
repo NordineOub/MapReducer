@@ -1,4 +1,4 @@
-# Yarn Lab 2                                           
+# Yarn MapReducer Operations                                     
 
 This mapreduce jar file allows you to do several operations:
 
